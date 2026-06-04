@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Control Panel"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="10dp"/>
+
+    <ListView
+        android:id="@+id/admin_booking_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/et_admin_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter status update or note"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btn_accept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACCEPT"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/btn_reject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REJECT"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MARK AS DONE"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btn_admin_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT ADMIN"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
